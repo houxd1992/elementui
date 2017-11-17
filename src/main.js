@@ -8,10 +8,12 @@ import 'element-ui/lib/theme-chalk/index.css';
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import headerCom from './components/header';
 
+Vue.component('v-header', headerCom);
 Vue.use(ElementUI);
 
-Vue.config.productionTip = true;
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
